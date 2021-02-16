@@ -1,0 +1,24 @@
+.icon {
+    display: inline-block;
+    color: currentColor;
+    height: 1em;
+    width: 1em;
+}
+/*
+    Для задання ширини іконки ділимо ширину на висоту
+    і задаємо це значення у розмірності em (кому поправити на крапку).
+
+    .. або задати формулою
+*/
+
+.icon-seach {
+    width: (14em/15);
+}
+
+.icon-cart {
+    width: (26em/25);
+}
+
+.icon-socials {
+    width: (46em/24);
+}

@@ -1,0 +1,8 @@
+
+@import "./scss/customBootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//components
+@import './scss/common';
+@import './components/Header/header';
+@import './components/Footer/footer';
