@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Icons from './components/Icons/Icons';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import SamplesPage from './pages/SamplesPage/SamplesPage';
 
 //styles
 import './App.scss';
@@ -13,11 +14,12 @@ import './App.scss';
 function App() {
   return (
     <Router basename="/bicycle">
-        <Icons/>
+      <Icons/>
       <div className="page-wrapper">
         <Header/>
+          {/* <Switch> */}
         <main className="content-wrapper">
-          <Switch>
+          <SamplesPage/>
 
             {/* MainPage */}
               {/* <TopBanner/> */}
@@ -62,9 +64,12 @@ function App() {
             {/* ContactsPage */}
               {/* <Contacts/> */}
 
-          </Switch>
+            {/* SamplesPage */}
+            {/* All icons, buttons and so on */}
+
         </main>
         <Footer/>
+          {/* </Switch> */}
       </div>
     </Router>
   );

@@ -1,4 +1,18 @@
+html {
+  font-family: 'Futura PT', sans-serif !important;
+}
 
+.page-wrapper {
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+}
 
 //override the Chrome autocomplete skyblue color. change the 4th value in accordance to the input
 input:-webkit-autofill,
@@ -9,13 +23,33 @@ input:-webkit-autofill:active  {
 }
 
 .svg-defs {
-    position: absolute;
-    overflow: hidden;
-    height: 0;
-    width: 0;
+  position: absolute;
+  overflow: hidden;
+  height: 0;
+  width: 0;
 }
 
 
 label {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
 }

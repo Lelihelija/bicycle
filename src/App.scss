@@ -1,8 +1,18 @@
 
-@import "./scss/customBootstrap";
+//scss general
+@import './scss/customBootstrap';
+@import './scss/variables';
+@import './scss/common';
+@import './scss/fonts';
+
+//bootstrap orininal link. MUST be after a custom bootstrap file
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 //components
-@import './scss/common';
+@import './components/Icons/icons';
+@import './components/Button/button';
 @import './components/Header/header';
 @import './components/Footer/footer';
+
+//pages
+@import './pages/SamplesPage/samplesPage';
