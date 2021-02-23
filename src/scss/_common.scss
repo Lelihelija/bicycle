@@ -1,5 +1,13 @@
 html {
-  font-family: 'Futura PT', sans-serif !important;
+  font-family: "Futura PT", sans-serif !important;
+}
+
+:root {
+  font-family: "Futura PT", sans-serif !important;
+}
+
+body {
+  font-family: inherit !important;
 }
 
 .page-wrapper {
@@ -44,6 +52,11 @@ li {
 	list-style: none;
 }
 
+ul {
+  padding-left: 0px;
+  margin-bottom: 0;
+}
+
 h1,
 h2,
 h3,
@@ -52,4 +65,10 @@ h5,
 h6 {
 	font-weight: inherit;
 	font-size: inherit;
+}
+
+button {
+  background-color: transparent;
+  padding: 0;
+  border: none;
 }

@@ -1,5 +1,5 @@
 .samples-page {
-  &__inner{}
+  // &__inner{}
 
   .row {
     justify-content: space-around;
@@ -18,10 +18,18 @@
       display: flex;
     }
 
-    li {
-      text-align: center;
-      list-style: disc;
-      margin-top: 5px;
+    span {
+      vertical-align: middle;
+
+      &::before {
+        background-color: $black;
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: 5px;
+        height: 5px;
+        content: '';
+        width: 5px;
+      }
     }
 
     .sample-title {
@@ -32,6 +40,7 @@
 
   .icons {
     .icon {
+      cursor: pointer;
       font-size: 24px;
     }
   }
@@ -40,9 +49,42 @@
     .btn-wrapper:last-child {
       margin-top: 15px;
     }
+
+    .plus,
+    .minus {
+      position: relative;
+
+      &:hover::before,
+      &:hover::after {
+        background-color: $black;
+      }
+    }
+
+    .plus::before,
+    .plus::after,
+    .minus::after {
+      background-color: $white;
+      position: absolute;
+      display: block;
+      height: 11px;
+      content:'';
+      width: 3px;
+      right: 9px;
+      top: 5px;
+    }
+
+    .plus::after,
+    .minus::after {
+      transform: rotate(90deg);
+    }
   }
 
   .logo {
+
+    img {
+      cursor: pointer;
+    }
+
     .logo-wrapper-white {
       background-color: $black;
       border-radius: 8px;
@@ -63,22 +105,22 @@
 
   .typography {
     h1 {
-      font-weight: 700px;
+      font-weight: 700;
       font-size: 64px;
     }
 
     h2 {
-      font-weight: 700px;
+      font-weight: 700;
       font-size: 36px;
     }
 
     h3 {
-      font-weight: 500px;
+      font-weight: 500;
       font-size: 24px;
     }
 
     p {
-      font-weight: 400px;
+      font-weight: 400;
       font-size: 18px;
 
       &.bigger {
@@ -86,11 +128,11 @@
       }
 
       &.medium {
-        font-weight: 500px;
+        font-weight: 500;
       }
 
       &.bold {
-        font-weight: 700px;
+        font-weight: 700;
       }
     }
   }

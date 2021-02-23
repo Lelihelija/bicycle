@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from '../../img/ui/logo.png';
 
+import logoHeader from '../../img/ui/logoHeader.png';
+import logoFooter from '../../img/ui/logoFooter.png';
 //bootstrap
 import { Row, Col, Container } from 'react-bootstrap';
 
@@ -18,50 +19,52 @@ function SamplesPage () {
             <Col xs="24" className="sample-title"><h3>Svg Icons</h3></Col>
             <Col xs="5" className="item">
               <Icon name="icon-seach"/>
-              <li>name="icon-seach"</li>
+              <span>name="icon-seach"</span>
             </Col>
             <Col xs="5" className="item">
               <Icon name="icon-cart"/>
-              <li>name="icon-seach"</li>
+              <span>name="icon-cart"</span>
             </Col>
             <Col xs="5" className="item">
               <Icon name="icon-socials"/>
-              <li>name="icon-seach"</li>
+              <span>name="icon-socials"</span>
             </Col>
           </Row>
 
           <Row className="buttons">
             <Col xs="24" className="sample-title"><h3>Bitte knopfen drucken</h3></Col>
             <Col xs="3" className="btn-wrapper item">
-              <Button text="-" style="btn__xs btn__nobold btn__black" type="button"/>
-              <li>style="btn__xs btn__nobold btn__black"</li>
+              <Button style="btn__xs btn__nobold btn__black plus" type="button"/>
+              <span>style="btn__xs btn__nobold btn__black"</span>
             </Col>
             <Col xs="3" className="btn-wrapper item">
-              <Button text="+" style="btn__xs btn__nobold btn__black" type="button"/>
-              <li>style="btn__xs btn__nobold btn__black"</li>
+              <Button style="btn__xs btn__nobold btn__black minus" type="button"/>
+              <span>style="btn__xs btn__nobold btn__black"</span>
             </Col>
             <Col xs="5" className="btn-wrapper item">
               <Button text="knopfen1" style="btn__s btn__black" type="button"/>
-              <li>style="btn__s btn__black"</li>
+              <span>style="btn__s btn__black"</span>
             </Col>
             <Col xs="6" className="btn-wrapper item">
               <Button text="knopfen2" style="btn__md btn__white btn__bordered" type="button"/>
-              <li>style="btn__md btn__white btn__bordered"</li>
+              <span>style="btn__md btn__white btn__bordered"</span>
             </Col>
             <Col xs="7" className="btn-wrapper item">
               <Button text="knopfen3" style="btn__lg btn__white btn__bordered" type="button"/>
-              <li>style="btn__lg btn__white btn__bordered"</li>
+              <span>style="btn__lg btn__white btn__bordered"</span>
             </Col>
             <Col xs="7" className="btn-wrapper item">
               <Button text="knopfen4" style="btn__xl btn__black" type="button"/>
-              <li>style="btn__xl btn__black"</li>
+              <span>style="btn__xl btn__black"</span>
             </Col>
           </Row>
 
           <Row className="logo">
             <Col xs="24" className="sample-title"><h3>Company logo</h3></Col>
-            <div className="logo-wrapper-black"><img src={logo} alt="logo"/></div>
-            <div className="logo-wrapper-white"><img src={logo} alt="logo"/></div>
+            <div className="logo-wrapper-black"><img src={logoHeader} alt="logo"/></div>
+            <div className="logo-wrapper-white"><img src={logoHeader} alt="logo"/></div>
+            <div className="logo-wrapper-black"><img src={logoFooter} alt="logo"/></div>
+            <div className="logo-wrapper-white"><img src={logoFooter} alt="logo"/></div>
           </Row>
 
 
@@ -69,31 +72,31 @@ function SamplesPage () {
             <Col xs="24" className="sample-title"><h3>Typography</h3></Col>
             <Col xs="24">
               <h1>Зручний та швидкий<br/>Твій ідеал для підкорення міста</h1>
-              <li>h1</li>
+              <span>h1</span>
             </Col>
             <Col xs="24">
               <h2>Зручний та швидкий<br/>Твій ідеал для підкорення міста</h2>
-              <li>h2</li>
+              <span>h2</span>
             </Col>
             <Col xs="24">
               <h3>Зручний та швидкий<br/>Твій ідеал для підкорення міста</h3>
-              <li>h3</li>
+              <span>h3</span>
             </Col>
             <Col xs="24">
               <p className="bold">Зручний та швидкий<br/>Твій ідеал для підкорення міста</p>
-              <li>p bold</li>
+              <span>p bold</span>
             </Col>
             <Col xs="24">
               <p className="medium">Зручний та швидкий<br/>Твій ідеал для підкорення міста</p>
-              <li>p medium</li>
+              <span>p medium</span>
             </Col>
             <Col xs="24">
               <p>Зручний та швидкий<br/>Твій ідеал для підкорення міста</p>
-              <li>p standart</li>
+              <span>p standart</span>
             </Col>
             <Col xs="24">
               <p className="bigger">Зручний та швидкий<br/>Твій ідеал для підкорення міста</p>
-              <li>p bigger</li>
+              <span>p bigger</span>
             </Col>
           </Row>
 

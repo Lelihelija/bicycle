@@ -6,20 +6,30 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Icons from './components/Icons/Icons';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import SamplesPage from './pages/SamplesPage/SamplesPage';
 
 //styles
 import './App.scss';
 
+//imported data
+import {pagesData} from './data/websitedata';
+
 function App() {
+  console.log(pagesData);
+
   return (
     <Router basename="/bicycle">
       <Icons/>
       <div className="page-wrapper">
         <Header/>
-          {/* <Switch> */}
-        <main className="content-wrapper">
-          <SamplesPage/>
+        {/* <Switch> */}
+          <main className="content-wrapper">
+            {
+              pagesData.map((elem, index) => {
+                <Route {...elem} key={index}/>
+              })
+            }
+
+            {/* <SamplesPage/> */}
 
             {/* MainPage */}
               {/* <TopBanner/> */}
@@ -67,9 +77,11 @@ function App() {
             {/* SamplesPage */}
             {/* All icons, buttons and so on */}
 
-        </main>
+            {/* 404page */}
+
+          </main>
+        {/* </Switch> */}
         <Footer/>
-          {/* </Switch> */}
       </div>
     </Router>
   );

@@ -1,22 +1,24 @@
 @mixin font-face ($fontname, $fontfile, $fontweight: normal, $fontstyle: normal) {
 	@font-face {
 		font-family: $fontname;
-		src: url('../fonts/futurapt/' + $fontfile + '.eot');
-		src: url('../fonts/futurapt/' + $fontfile + '.eot?#iefix') format('embedded-opentype'),
-			 url('../fonts/futurapt/' + $fontfile + '.woff') format('woff'),
-			 url('../fonts/futurapt/' + $fontfile + '.ttf') format('truetype');
+		src: url('../fonts/' + $fontfile + '.eot');
+		src: url('../fonts/' + $fontfile + '.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/' + $fontfile + '.woff') format('woff'),
+			 url('../fonts/' + $fontfile + '.ttf') format('truetype');
 		font-weight: $fontweight;
 		font-style: $fontstyle;
 	}
 };
 
-// //examples
-// @include font-face('Roboto', 'roboto-regular', 400, normal);
-// @include font-face('Roboto', 'roboto-bold', 700, normal);
-// @include font-face('Roboto', 'roboto-bold-italic', 700, italic);
+@include font-face('Futura PT', 'futurapt/futuraptbold', 700, normal);
+@include font-face('Futura PT', 'futurapt/futuraptboldobl', 700, italic);
+@include font-face('Futura PT', 'futurapt/futuraptmedium', 500, normal);
+@include font-face('Futura PT', 'futurapt/futuraptmediumobl', 500, italic);
+@include font-face('Futura PT', 'futurapt/futuraptbook', 400, normal);
+@include font-face('Futura PT', 'futurapt/futuraptbookobl', 400, italic);
+
 
 // .element {
-//   font-family: 'Roboto';
 //   font-weight:700;
 //   font-style: italic;
 // }

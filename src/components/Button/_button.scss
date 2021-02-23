@@ -1,8 +1,11 @@
 .btn_ {
   border: 3px solid transparent;
+  vertical-align: middle;
   text-align: center;
-  font-style: 700;
+  line-height: 1em;
+  font-weight: 700;
   font-size: 18px;
+  // height: 100%;
   width: 100%;
   padding: 0;
 
@@ -28,49 +31,32 @@
     }
   }
 
-  //sizes
-  // &_1 { //col="6" max-width
-  //   padding-right: 167px;
-  //   padding-left: 167px;
-  // }
-  // &_2 { //col="6" max-width
-  //   padding-right: 18px;
-  //   padding-left: 18px;
-  // }
-  // &_3 { //col="6" max-width
-  //   padding-right: 106px;
-  //   padding-left: 106px;
-  // }
-  // &_4 { //col="6" max-width
-  //   padding-right: 42px;
-  //   padding-left: 42px;
-  // }
-  // &_5 { //col="6" max-width
-  //   padding-right: 97px;
-  //   padding-left: 97px;
-  // }
-  // &_6 { //col="6" max-width
-  //   padding-right: 18px;
-  //   padding-left: 18px;
-  // }
-
   &_xs { // col="2" parent div
-    max-width: 26px;
+    height: 26px;
+    width: 26px;
   }
 
   &_s { // col="5" parent div
+    padding-bottom: 8px;
+    padding-top: 9px;
     max-width: 206px;
   }
 
   &_md { // col="6" parent div
+    padding-bottom: 11px;
+    padding-top: 10px;
     max-width: 252px;
   }
 
   &_lg { // col="7" parent div
+    padding-bottom: 11px;
+    padding-top: 10px;
     max-width: 302px;
   }
 
   &_xl { // col="7" parent div
+    padding-bottom: 14px;
+    padding-top: 14px;
     max-width: 338px;
   }
 
@@ -81,7 +67,7 @@
   }
 
   &_nobold {
-    font-style: 400;
+    font-weight: 400;
   }
   // &_
   // &_

@@ -1,0 +1,99 @@
+.footer {
+  background-color: $bg-footer;
+
+  &-inner {
+    justify-content: space-between;
+    margin-bottom: 81px;
+    margin-top: 55px;
+    color: $white;
+  }
+
+  &__logo {
+    @media (max-width: $screen-lg-max) {
+      margin-top: 15px;
+      order: 5;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    margin-top: 21px;
+    font-size: 18px;
+
+    @media (max-width: $screen-xs-max) {
+      display: none;
+    }
+
+    &-title {
+      margin-bottom: 11px;
+      font-weight: 700;
+      display: block;
+    }
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 9px;
+      }
+      a {
+        font-weight: 400;
+        color: $white;
+
+
+        &:hover {
+          text-decoration: underline;
+          color: $white;
+        }
+        &:active {
+            color: $white;
+        }
+      }
+    }
+  }
+
+  &__socials {
+    margin-top: 21px;
+
+    @media (max-width: $screen-xs-max) {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+
+    }
+
+    @media (max-width: $screen-xs-max) {
+      justify-content: center;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-lg-max) {
+      justify-content: flex-end;
+      display: flex;
+      order: 6;
+    }
+
+    .icon {
+      cursor: pointer;
+      font-size: 28px;
+      color: $white;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+    margin-top: 37px;
+
+    @media (max-width: $screen-lg-max) {
+      order: 7;
+    }
+  }
+}
