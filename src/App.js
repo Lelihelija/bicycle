@@ -6,6 +6,10 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Icons from './components/Icons/Icons';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import MainPage from './pages/MainPage/MainPage';
+
+//page for test
+import SamplesPage from './pages/SamplesPage/SamplesPage';
 
 //styles
 import './App.scss';
@@ -18,11 +22,12 @@ function App() {
 
   return (
     <Router basename="/bicycle">
-      <Icons/>
       <div className="page-wrapper">
+        <Icons/>
         <Header/>
-        {/* <Switch> */}
-          <main className="content-wrapper">
+        <MainPage/>
+        <main className="content-wrapper">
+          <Switch>
             {
               pagesData.map((elem, index) => {
                 <Route {...elem} key={index}/>
@@ -79,8 +84,9 @@ function App() {
 
             {/* 404page */}
 
-          </main>
-        {/* </Switch> */}
+          </Switch>
+          <SamplesPage/>
+        </main>
         <Footer/>
       </div>
     </Router>

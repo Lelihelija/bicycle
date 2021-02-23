@@ -1,0 +1,28 @@
+.topbanner {
+  background-image: url(../../img/ui/topBannerBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-inner {
+    padding-bottom: 241px;
+    padding-top: 556px;
+    color: $white;
+  }
+
+  &__subtitle {
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 24px;
+    display: block;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    line-height: 64px;
+    font-weight: 700;
+    font-size: 64px;
+    margin-top: 4px;
+    display: block;
+  }
+
+}

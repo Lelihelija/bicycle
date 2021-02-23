@@ -11,8 +11,12 @@ import SamplesPage from '../pages/SamplesPage/SamplesPage';
 
 export const pagesData = [
   {
-    path: '/aboutuspage',
     exact: true,
+    path: '/mainpage',
+    component: MainPage,
+  },
+  {
+    path: '/aboutuspage',
     component: AboutUsPage,
   },
   {
@@ -42,10 +46,6 @@ export const pagesData = [
   {
     path: '/newspage',
     component: NewsPage,
-  },
-  {
-    path: '/mainpage',
-    component: MainPage,
   },
   {
     component: NotFoundPage,

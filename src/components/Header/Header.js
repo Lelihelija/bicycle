@@ -11,7 +11,7 @@ function Header() {
     const toggleMenu = () => {setToggleMenu(!menuIsActive)};
 
     return (
-        <header className="header">
+        <header className="header white">
             <Container className="custom-container">
                 <Row className="header-inner">
                     <Col className="header__logo" xs="24" md="8">
