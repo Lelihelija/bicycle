@@ -26,8 +26,20 @@ function SamplesPage () {
               <span>name="icon-cart"</span>
             </Col>
             <Col xs="5" className="item">
-              <Icon name="icon-socials"/>
-              <span>name="icon-socials"</span>
+              <Icon name="icon-facebook"/>
+              <span>name="icon-facebook"</span>
+            </Col>
+            <Col xs="5" className="item">
+              <Icon name="icon-instagram"/>
+              <span>name="icon-instagram"</span>
+            </Col>
+            <Col xs="12" className="item">
+              <Icon name="icon-bgrd-half"/>
+              <span>name="icon-bgrd-half"</span>
+            </Col>
+            <Col xs="12" className="item">
+              <Icon name="icon-bgrd-full"/>
+              <span>name="icon-bgrd-full"</span>
             </Col>
           </Row>
 

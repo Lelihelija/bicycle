@@ -8,12 +8,22 @@
 //bootstrap orininal link. MUST be after a custom bootstrap file
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+//slick-slider scss files
+@import "slick-carousel/slick/slick-theme.css";
+@import "slick-carousel/slick/slick.css";
+
+
 //components
 @import './components/Icons/icons';
 @import './components/Button/button';
 @import './components/Header/header';
 @import './components/Footer/footer';
 @import './components/TopBanner/topbanner';
+@import './components/Categories/categories';
+@import './components/Selected/selected';
+@import './components/Bgrd/bgrd';
+@import './components/CompanyInfo/companyinfo';
+@import './components/ProductInfo/productinfo';
 
 //pages
 @import './pages/AboutUsPage/aboutuspage';

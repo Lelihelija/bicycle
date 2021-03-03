@@ -6,10 +6,13 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Icons from './components/Icons/Icons';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import MainPage from './pages/MainPage/MainPage';
+import Bgrd from './components/Bgrd/Bgrd';
+import CompanyInfo from './components/CompanyInfo/CompanyInfo';
+import ProductInfo from './components/ProductInfo/ProductInfo';
 
 //page for test
 import SamplesPage from './pages/SamplesPage/SamplesPage';
+import MainPage from './pages/MainPage/MainPage';
 
 //styles
 import './App.scss';
@@ -26,6 +29,9 @@ function App() {
         <Icons/>
         <Header/>
         <MainPage/>
+        <Bgrd/>
+        <CompanyInfo/>
+        <ProductInfo/>
         <main className="content-wrapper">
           <Switch>
             {

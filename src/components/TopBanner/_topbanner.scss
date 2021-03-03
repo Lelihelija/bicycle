@@ -1,11 +1,13 @@
 .topbanner {
   background-image: url(../../img/ui/topBannerBackground.png);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 
   &-inner {
     padding-bottom: 241px;
     padding-top: 556px;
+    min-height: 100vh;
     color: $white;
   }
 

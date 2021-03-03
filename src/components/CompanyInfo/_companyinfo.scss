@@ -1,0 +1,13 @@
+.companyinfo {
+  background-color: $bg-grey;
+
+  &__inner {
+    padding-bottom: 52px;
+    padding-top: 52px;
+  }
+
+  &-text {
+    font-size: 24px;
+    margin: 0;
+  }
+}
