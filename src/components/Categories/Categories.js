@@ -11,45 +11,62 @@ function Categories () {
     dots: false,
     speed: 500,
     infinite: true,
+    arrow: true, //not working
     swipeToSlide: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     // adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1450,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ],
   };
   return (
     <div className="categories">
       <Container>
         <span className="categories__title">Категории</span>
       </Container>
-      <div className="categories__slider">
+      <Row className="categories__slider">
         <Slider {...settings}>
-          <div className="categories__slider-item">
+          <div className="categories__slider-item" xs="20">
             <img className="categories__slider-bgrd" src={sliderBgrd1} alt="test"/>
             <img className="categories__slider-product" src={bicycle} alt="bike"/>
             <span className="categories__slider-text">ROAD SERIES</span>
           </div>
-          <div className="categories__slider-item">
+          <div className="categories__slider-item" xs="20">
             <img className="categories__slider-bgrd" src={sliderBgrd1} alt="test"/>
             <img className="categories__slider-product" src={bicycle} alt="bike"/>
             <span className="categories__slider-text">ROAD SERIES</span>
           </div>
-          <div className="categories__slider-item">
+          <div className="categories__slider-item" xs="20">
             <img className="categories__slider-bgrd" src={sliderBgrd1} alt="test"/>
             <img className="categories__slider-product" src={bicycle} alt="bike"/>
             <span className="categories__slider-text">ROAD SERIES</span>
           </div>
-          <div className="categories__slider-item">
+          <div className="categories__slider-item" xs="20">
             <img className="categories__slider-bgrd" src={sliderBgrd1} alt="test"/>
             <img className="categories__slider-product" src={bicycle} alt="bike"/>
             <span className="categories__slider-text">ROAD SERIES</span>
           </div>
-          <div className="categories__slider-item">
+          <div className="categories__slider-item" xs="20">
             <img className="categories__slider-bgrd" src={sliderBgrd1} alt="test"/>
             <img className="categories__slider-product" src={bicycle} alt="bike"/>
             <span className="categories__slider-text">ROAD SERIES</span>
           </div>
         </Slider>
-      </div>
+      </Row>
     </div>
   )
 };

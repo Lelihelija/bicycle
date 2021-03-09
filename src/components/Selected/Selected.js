@@ -16,7 +16,7 @@ function Selected() {
           <div className="selected-item__main">
             <h3 className="selected-item__main-title">STREETSTER BAKERSTREET</h3>
             <span className="selected-item__main-description">скорость соедененная с удобством</span>
-            <img src={bike} alt="bike"/>
+            <img src={bike} alt="bike" className="selected-item__main-img"/>
             <button className="selected-item__main-btn"><span></span></button>
           </div>
           <div className="selected-item__secondary">

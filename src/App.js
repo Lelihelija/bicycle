@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import Bgrd from './components/Bgrd/Bgrd';
 import CompanyInfo from './components/CompanyInfo/CompanyInfo';
 import ProductInfo from './components/ProductInfo/ProductInfo';
+import News from './components/News/News';
 
 //page for test
 import SamplesPage from './pages/SamplesPage/SamplesPage';
@@ -32,6 +33,7 @@ function App() {
         <Bgrd/>
         <CompanyInfo/>
         <ProductInfo/>
+        <News/>
         <main className="content-wrapper">
           <Switch>
             {
@@ -91,7 +93,7 @@ function App() {
             {/* 404page */}
 
           </Switch>
-          <SamplesPage/>
+          {/* <SamplesPage/> */}
         </main>
         <Footer/>
       </div>

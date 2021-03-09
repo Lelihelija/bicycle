@@ -4,10 +4,19 @@
   &__inner {
     padding-bottom: 52px;
     padding-top: 52px;
+
+    @media (max-width: $screen-md-max) {
+      padding-bottom: 32px;
+      padding-top: 32px;
+    }
   }
 
   &-text {
     font-size: 24px;
     margin: 0;
+
+    @media (max-width: $screen-md-max) {
+      font-size: 18px;
+    }
   }
 }

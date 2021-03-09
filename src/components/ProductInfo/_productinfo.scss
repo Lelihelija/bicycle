@@ -1,14 +1,18 @@
 .productinfo {
   background-image: url('../../img/ui/bgrdhalf.svg');
   background-repeat: no-repeat;
-  // background-position: center;
   background-size: cover;
-  // position: relative;
-  min-height: 100vh;
+  // min-height: 100vh;
   min-width: 100vw;
 
   &__inner {
+    margin-bottom: 170px;
     margin-top: 84px;
+
+    @media (max-width: $screen-md-max) {
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
   }
 
   &__title {
@@ -16,5 +20,72 @@
     text-align: center;
     font-weight: 700;
     font-size: 36px;
+
+    @media (max-width: $screen-md-max) {
+      margin-bottom: 40px;
+    }
+  }
+
+  // Info card
+  &__info {
+    &-row {
+      @media (max-width: $screen-md-max) {
+        flex-direction: column;
+      }
+    }
+
+    &-wrapper {
+      padding: 57px 18px 24px 18px;
+      background-color: $bg-grey;
+      justify-content: center;
+      text-align: center;
+      margin-right: 40px;
+      position: relative;
+      margin-left: 40px;
+
+      @media (max-width: $screen-lg-max) {
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+
+      @media (max-width: $screen-md-max) {
+        margin-right: auto;
+        padding-top: 24px;
+        margin-left: auto;
+      }
+
+      &:not(:first-child) {
+        @media (max-width: $screen-md-max) {
+          margin-top: 50px;
+        }
+      }
+    }
+
+    &-img {
+      position: absolute;
+      margin-right: auto;
+      margin-left: auto;
+      top: -88px;
+      right: 0;
+      left: 0;
+
+      @media (max-width: $screen-md-max) {
+        position: static;
+        display: block;
+        height: 80px;
+      }
+    }
+
+    &-title {
+      word-break: break-word;
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    &-details {
+      margin-bottom: 0;
+      font-weight: 400;
+      font-size: 18px;
+    }
   }
 }
