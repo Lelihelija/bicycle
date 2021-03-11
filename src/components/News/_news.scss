@@ -1,7 +1,142 @@
 .news {
+
+  &__inner {
+    padding-bottom: 15px;
+    padding-top: 146px;
+  }
+
   &__title {
     text-align: center;
     font-weight: 700;
     font-size: 64px;
+    margin-bottom: 0;
   }
+
+  &__slider-wrapper {
+    margin-top: 55px;
+
+    .slick-slider {
+      padding-right: 36px;
+      padding-left: 96px;
+
+      @media (max-width: $screen-xs-max) {
+        padding-left: 0px !important;
+      }
+
+      @media (max-width: $screen-md-max) {
+        padding-right: 0px;
+        padding-left: 60px;
+      }
+    }
+
+    .slick-slide:not(.slick-center) {
+      @media (max-width: $screen-sm-max) {
+        visibility: hidden;
+      }
+    }
+
+    //custom slick arrows start//
+    .slick- {
+      &arrow {
+        height: 40px;
+        width: 40px;
+        z-index: 2;
+
+        &::before {
+          border-bottom: 3px solid;
+          border-right: 3px solid;
+          border-color: $black;
+          display: block;
+          height: 22px;
+          content: "";
+          width: 22px;
+        }
+      }
+
+      &prev {
+        left: 17px;
+
+        &::before {
+          transform: rotate(135deg);
+        }
+
+        @media (max-width: $screen-lg-max) {
+          left: -13px;
+        }
+      }
+
+      &next {
+        right: 0px;
+
+        &::before {
+          transform: rotate(-45deg);
+        }
+
+        @media (max-width: $screen-lg-max) {
+          right: -30px;
+        }
+      }
+    }
+    //custom slick arrows end//
+  }
+
+  //slide style start//
+  &__slide {
+    max-width: 337px;
+
+    @media (max-width: $screen-md-max) {
+      max-width: 250px;
+    }
+
+    &-inner {
+      justify-content: space-between;
+      background-color: $bg-grey;
+      flex-direction: column;
+      height: 559px;
+      display: flex;
+
+      @media (max-width: $screen-md-max) {
+        height: 459px;
+      }
+    }
+
+    &-img {
+      img {
+        width: 100%;
+      }
+    }
+
+      &-title {
+        text-align: center;
+        line-height: 31px;
+        font-weight: 700;
+        font-size: 24px;
+
+        @media (max-width: $screen-md-max) {
+          line-height: 25px;
+          font-size: 20px;
+        }
+      }
+
+      &-description {
+        text-align: center;
+        line-height: 23px;
+        font-weight: 400;
+        font-size: 18px;
+
+        @media (max-width: $screen-md-max) {
+          line-height: 20px;
+        }
+      }
+
+    &-btn {
+      text-align: center;
+      display: block;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  //slide style end//
 }

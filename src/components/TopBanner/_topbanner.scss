@@ -5,9 +5,9 @@
   background-size: cover;
 
   &-inner {
-    padding-bottom: 241px;
+    padding-bottom: 239px;
     padding-top: 556px;
-    min-height: 100vh;
+    // min-height: 100vh;
     color: $white;
   }
 
@@ -19,7 +19,7 @@
   }
 
   &__title {
-    margin-bottom: 25px;
+    margin-bottom: 27px;
     line-height: 64px;
     font-weight: 700;
     font-size: 64px;

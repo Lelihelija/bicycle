@@ -3,11 +3,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   // min-height: 100vh;
-  min-width: 100vw;
+  // min-width: 100vw;
 
   &__inner {
-    margin-bottom: 170px;
-    margin-top: 84px;
+    padding-bottom: 15px;
+    padding-top: 84px;
 
     @media (max-width: $screen-md-max) {
       margin-bottom: 50px;
@@ -29,19 +29,27 @@
   // Info card
   &__info {
     &-row {
+      justify-content: space-around;
+      padding-right: 46px;
+      padding-left: 46px;
+
       @media (max-width: $screen-md-max) {
         flex-direction: column;
+      }
+
+      @media (max-width: $screen-lg-max) {
+        padding-right: 0;
+        padding-left: 0;
       }
     }
 
     &-wrapper {
-      padding: 57px 18px 24px 18px;
+      padding: 57px 20px 12px 20px;
       background-color: $bg-grey;
       justify-content: center;
       text-align: center;
-      margin-right: 40px;
+      max-width: 331px;
       position: relative;
-      margin-left: 40px;
 
       @media (max-width: $screen-lg-max) {
         margin-right: 20px;

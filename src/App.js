@@ -6,10 +6,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Icons from './components/Icons/Icons';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import Bgrd from './components/Bgrd/Bgrd';
-import CompanyInfo from './components/CompanyInfo/CompanyInfo';
-import ProductInfo from './components/ProductInfo/ProductInfo';
-import News from './components/News/News';
 
 //page for test
 import SamplesPage from './pages/SamplesPage/SamplesPage';
@@ -29,19 +25,21 @@ function App() {
       <div className="page-wrapper">
         <Icons/>
         <Header/>
-        <MainPage/>
-        <Bgrd/>
-        <CompanyInfo/>
-        <ProductInfo/>
-        <News/>
         <main className="content-wrapper">
-          <Switch>
+
+{/*-----------------------Pages, but do smth to router, start----------*/}
+          <MainPage/>
+{/*-----------------------Pages, but do smth to router, start----------*/}
+
+          {/* <Switch>
             {
               pagesData.map((elem, index) => {
                 <Route {...elem} key={index}/>
               })
             }
+          </Switch> */}
 
+{/*--------------------------pages structure start---------------------*/}
             {/* <SamplesPage/> */}
 
             {/* MainPage */}
@@ -92,8 +90,9 @@ function App() {
 
             {/* 404page */}
 
-          </Switch>
-          {/* <SamplesPage/> */}
+            
+{/*----------------------pages structure end------------------------------*/}
+
         </main>
         <Footer/>
       </div>
