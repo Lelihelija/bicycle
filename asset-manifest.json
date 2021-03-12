@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/bicycle/static/css/main.2053c0db.chunk.css",
-    "main.js": "/bicycle/static/js/main.ebbd90a4.chunk.js",
-    "main.js.map": "/bicycle/static/js/main.ebbd90a4.chunk.js.map",
+    "main.css": "/bicycle/static/css/main.fe4ba879.chunk.css",
+    "main.js": "/bicycle/static/js/main.8db1ec14.chunk.js",
+    "main.js.map": "/bicycle/static/js/main.8db1ec14.chunk.js.map",
     "runtime-main.js": "/bicycle/static/js/runtime-main.e333a775.js",
     "runtime-main.js.map": "/bicycle/static/js/runtime-main.e333a775.js.map",
     "static/css/2.d36d18fb.chunk.css": "/bicycle/static/css/2.d36d18fb.chunk.css",
@@ -12,8 +12,9 @@
     "static/js/3.7a9f3945.chunk.js.map": "/bicycle/static/js/3.7a9f3945.chunk.js.map",
     "index.html": "/bicycle/index.html",
     "static/css/2.d36d18fb.chunk.css.map": "/bicycle/static/css/2.d36d18fb.chunk.css.map",
-    "static/css/main.2053c0db.chunk.css.map": "/bicycle/static/css/main.2053c0db.chunk.css.map",
+    "static/css/main.fe4ba879.chunk.css.map": "/bicycle/static/css/main.fe4ba879.chunk.css.map",
     "static/js/2.77bc6f5c.chunk.js.LICENSE.txt": "/bicycle/static/js/2.77bc6f5c.chunk.js.LICENSE.txt",
+    "static/media/bg.844fbcf8.png": "/bicycle/static/media/bg.844fbcf8.png",
     "static/media/App.scss": "/bicycle/static/media/topBannerBackground.5a9f16ff.png",
     "static/media/bicycle-selected.01a41fa7.png": "/bicycle/static/media/bicycle-selected.01a41fa7.png",
     "static/media/bicycle.7a527481.png": "/bicycle/static/media/bicycle.7a527481.png",
@@ -28,7 +29,7 @@
     "static/js/runtime-main.e333a775.js",
     "static/css/2.d36d18fb.chunk.css",
     "static/js/2.77bc6f5c.chunk.js",
-    "static/css/main.2053c0db.chunk.css",
-    "static/js/main.ebbd90a4.chunk.js"
+    "static/css/main.fe4ba879.chunk.css",
+    "static/js/main.8db1ec14.chunk.js"
   ]
 }
