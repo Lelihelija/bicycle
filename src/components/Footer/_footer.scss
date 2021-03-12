@@ -1,11 +1,19 @@
 .footer {
   background-color: $bg-footer;
 
+  @media (max-width: $screen-xs-max) {
+    background-color: transparent;
+  }
+
   &-inner {
-    justify-content: space-between;
     margin-bottom: 81px;
     margin-top: 55px;
     color: $white;
+
+    @media (max-width: $screen-md-max) {
+      margin-bottom: 6px;
+      margin-top: 0px;
+    }
   }
 
   &__logo {
@@ -91,6 +99,10 @@
   &__copyright {
     text-align: center;
     margin-top: 37px;
+
+    @media (max-width: $screen-xs-max) {
+      color: $black;
+    }
 
     @media (max-width: $screen-lg-max) {
       order: 7;

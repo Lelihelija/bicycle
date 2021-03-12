@@ -6,4 +6,9 @@
   padding-bottom: 157px;
   padding-top: 102px;
   // position: relative;
+
+    @media (max-width: $screen-md-max) {
+      padding-bottom: 50px;
+      padding-top: 50px;
+    }
 }

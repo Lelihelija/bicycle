@@ -9,6 +9,11 @@
     padding-top: 556px;
     // min-height: 100vh;
     color: $white;
+
+    @media (max-width: $screen-md-max) {
+      padding-bottom: 100px;
+      padding-top: 250px;
+    }
   }
 
   &__subtitle {
@@ -16,6 +21,11 @@
     font-weight: 400;
     font-size: 24px;
     display: block;
+
+    @media (max-width: $screen-md-max) {
+      line-height: 20px;
+      font-size: 20px;
+    }
   }
 
   &__title {
@@ -25,6 +35,11 @@
     font-size: 64px;
     margin-top: 4px;
     display: block;
+
+    @media (max-width: $screen-md-max) {
+      line-height: 40px;
+      font-size: 40px;
+    }
   }
 
 }

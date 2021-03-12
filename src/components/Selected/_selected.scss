@@ -1,8 +1,11 @@
 .selected {
-  margin-top: 120px;
 
   &__inner {
-    margin-top: 145px;
+    padding-top: 145px;
+
+    @media (max-width: $screen-md-max) {
+      padding-top: 50px;
+    }
   }
 
   &__title {

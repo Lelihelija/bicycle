@@ -35,6 +35,14 @@
       &prev {
         left: 102px;
 
+        @media (max-width: $screen-md-max) {
+          left: 94px;
+        }
+
+        @media (max-width: $screen-xs-max) {
+          left: 14px;
+        }
+
         &::before {
           transform: rotate(135deg);
         }
@@ -42,6 +50,14 @@
 
       &next {
         right: 102px;
+
+        @media (max-width: $screen-md-max) {
+          right: 94px;
+        }
+
+        @media (max-width: $screen-xs-max) {
+          right: -1px;
+        }
 
         &::before {
           transform: rotate(-45deg);

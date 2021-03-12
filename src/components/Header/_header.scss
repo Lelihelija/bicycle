@@ -80,6 +80,10 @@
 
   &-inner {
     margin-top: 48px;
+
+    @media (max-width: $screen-md-max) {
+      margin-top: 25px;
+    }
   }
 
   &__logo {
