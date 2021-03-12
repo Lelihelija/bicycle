@@ -92,13 +92,6 @@
         }
       }
 
-      // &.slick-center {
-      //   .slide__bgrd {
-      //     &::before {
-      //     }
-      //   }
-      // }
-
       &.slick-center:not(.slick-cloned) {
         .slide__bgrd {
           &::before {

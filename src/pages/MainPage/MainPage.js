@@ -6,6 +6,7 @@ import Bgrd from '../../components/Bgrd/Bgrd';
 import CompanyInfo from '../../components/CompanyInfo/CompanyInfo';
 import ProductInfo from '../../components/ProductInfo/ProductInfo';
 import News from '../../components/News/News';
+import Subscription from '../../components/Subscription/Subscription';
 
 function MainPage () {
 
@@ -15,7 +16,8 @@ function MainPage () {
         <Bgrd/>
         <CompanyInfo/>
         <ProductInfo/> {/* has svg bgrd */}
-        {/* <News/> */}
+        <News/>
+        <Subscription/>
     </div>
   )
 };

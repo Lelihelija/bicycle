@@ -61,7 +61,6 @@ function News() {
         breakpoint: 767,
         settings: {
           slidesToShow: 1,
-          centerMode: true,
           slidesToScroll: 1,
         }
       },
@@ -80,9 +79,15 @@ function News() {
                     <div className="news__slide-img">
                       <img src={elem.img} alt="slide"/>
                     </div>
-                      <span className="news__slide-title">{elem.title}</span>
-                      <p className="news__slide-description">{elem.description}</p>
-                    <a className="news__slide-btn btn__white btn__bordered btn__xl btn_" href="#">ЧИТАТЬ</a>
+                    <div className="news__slide-info-wrapper">
+                      <div className="news__slide-title-wrapper">
+                        <span className="news__slide-title">{elem.title}</span>
+                      </div>
+                      <div className="news__slide-description-wrapper">
+                        <p className="news__slide-description">{elem.description}</p>
+                      </div>
+                    </div>
+                    <a className="news__slide-btn btn__white btn__bordered btn__max btn_" href="#">ЧИТАТЬ</a>
                   </div>
                 </div>
               )}

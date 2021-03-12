@@ -1,9 +1,6 @@
 import React from 'react';
 import {Col, Row, Container} from 'react-bootstrap';
 
-//temporary imported news component
-import News from '../News/News';
-
 import support from '../../img/ui/support.png';
 import chain from '../../img/ui/chain.png';
 import frame from '../../img/ui/frame.png';
@@ -32,8 +29,6 @@ function ProductInfo() {
             </Col>
           </Row>
         </div>
-
-        <News/>
       </Container>
     </div>
   )
