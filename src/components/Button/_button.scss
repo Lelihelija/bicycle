@@ -7,7 +7,6 @@
   font-size: 18px;
   display: block;
   // height: 100%;
-  width: 100%;
   padding: 0;
 
   //colors
@@ -38,25 +37,27 @@
   }
 
   &_s { // col="5" parent div - topbanner
-    padding: 6px 27px 6px 27px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    width: 206px;
   }
 
   &_md { // col="6" parent div
     padding-bottom: 11px;
     padding-top: 10px;
-    max-width: 252px;
+    width: 252px;
   }
 
   &_lg { // col="7" parent div
     padding-bottom: 11px;
     padding-top: 10px;
-    max-width: 302px;
+    width: 302px;
   }
 
   &_xl { // col="7" parent div
     padding-bottom: 14px;
     padding-top: 14px;
-    max-width: 338px;
+    width: 338px;
 
     @media (max-width: $screen-md-max) {
       padding-bottom: 6px;
@@ -84,7 +85,11 @@
   &_nobold {
     font-weight: 400;
   }
-  // &_
+
+  //nowrap
+  &_nowrap {
+    white-space: nowrap;
+  }
   // &_
   // &_
 }
